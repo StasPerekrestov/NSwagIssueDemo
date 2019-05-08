@@ -30,7 +30,7 @@ namespace NSwagIssueDemo
             services.AddOpenApiDocument(document =>
             {
                 // https://github.com/RicoSuter/NSwag/issues/2156
-                document.DefaultReferenceTypeNullHandling = ReferenceTypeNullHandling.NotNull;
+                document.DefaultResponseReferenceTypeNullHandling = ReferenceTypeNullHandling.NotNull;
                 document.DocumentName = "a";
             });
         }
